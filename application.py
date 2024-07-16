@@ -11,8 +11,8 @@ app = application
 
 # import ridge model and scaler
 
-ridge_model = pickle.load(open('16-Deploying in AWS/flask_app/models/model_ridge.pkl', 'rb'))
-standard_scaler = pickle.load(open('16-Deploying in AWS/flask_app/models/scaler.pkl', 'rb'))
+ridge_model = pickle.load(open('models/model_ridge.pkl', 'rb'))
+standard_scaler = pickle.load(open('models/scaler.pkl', 'rb'))
 
 
 @app.route('/')
